@@ -7,7 +7,7 @@ namespace OperacionesApp
         public App()
         {
             InitializeComponent();
-            MainPage = new MainTabbedPage();
+            MainPage = new OperacionesMainTabbedPage();
         }
     }
 }
