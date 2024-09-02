@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:OperacionesApp.Views"
             x:Class="OperacionesApp.Views.OperacionesMainTabbedPage"
             Title="Operaciones">
-    <ContentPage Title="Área del Cuadrado">
-        <local:SquareAreaView />
-    </ContentPage>
-    <ContentPage Title="Área del Círculo">
-        <local:CircleAreaView />
-    </ContentPage>
-    <ContentPage Title="Área del Rectángulo">
-        <local:RectangleAreaView />
-    </ContentPage>
+    <TabbedPage.Children>
+        <local:SquareAreaView Title="Área del Cuadrado" />
+        <local:CircleAreaView Title="Área del Círculo" />
+        <local:RectangleAreaView Title="Área del Rectángulo" />
+    </TabbedPage.Children>
 </TabbedPage>

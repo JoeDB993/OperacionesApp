@@ -1,3 +1,6 @@
+
+using OperacionesApp.ViewModels;
+
 namespace OperacionesApp.Views
 {
     public partial class RectangleAreaView : ContentPage
@@ -5,6 +8,7 @@ namespace OperacionesApp.Views
         public RectangleAreaView()
         {
             InitializeComponent();
+            BindingContext = new RectangleAreaViewModel(); 
         }
     }
 }

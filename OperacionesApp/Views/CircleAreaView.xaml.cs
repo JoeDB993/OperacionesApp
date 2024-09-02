@@ -1,4 +1,4 @@
-using Microsoft.Maui.Controls;
+using OperacionesApp.ViewModels;
 
 namespace OperacionesApp.Views
 {
@@ -7,6 +7,7 @@ namespace OperacionesApp.Views
         public CircleAreaView()
         {
             InitializeComponent();
+            BindingContext = new CircleAreaViewModel(); 
         }
     }
 }
